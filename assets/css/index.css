@@ -1,0 +1,361 @@
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+section {
+  padding: 8vh 0;
+}
+
+iframe {
+  height: 100%;
+}
+
+.modal .modal-body {
+  background-color: palevioletred;
+  height: 100%;
+}
+
+.jumbotron {
+  background: url("../img/banner-image.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+}
+.jumbotron .logo-area {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10vh 0;
+}
+
+.section01 {
+  background: red;
+}
+
+.section02 {
+  background: pink;
+  background: #fa3c1d;
+  background: linear-gradient(337deg, #fa3c1d 0%, white 100%);
+  text-align: center;
+}
+.section02 .container {
+  margin: 10vh auto;
+}
+.section02 .container h2 {
+  font-size: 2em;
+  color: white;
+}
+
+.section03 {
+  background: url("../img/img008.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4vh 0;
+}
+.section03 h6 {
+  text-align: center;
+  font-size: 1.75em;
+  padding: 0 3vw;
+  line-height: 1.5em;
+  color: white;
+}
+.section03 h6 strong {
+  text-transform: uppercase;
+}
+.section03 h6 strong span {
+  text-decoration: underline;
+}
+
+.section04 {
+  background: url("../img/networking.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.section04 .container {
+  padding: 2vh 0;
+}
+.section04 .container .section04-contents {
+  text-align: center;
+}
+.section04 .container .section04-contents h2 {
+  color: #111921;
+  margin-bottom: 5vh;
+}
+
+.section05 {
+  background: url("../img/transparent-logo.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section05 .container .section05-contents {
+  padding: 4vh 2vw 0;
+  border-radius: 10px;
+  box-shadow: 1px 3px 6px rgba(17, 25, 33, 0.5);
+}
+.section05 .container .section05-contents .text h2 {
+  text-transform: uppercase;
+}
+.section05 .container .section05-contents .text p strong.emphasis {
+  font-size: 1.25em;
+  text-decoration: underline;
+}
+.section05 .container .section05-contents .image {
+  margin: 0 auto;
+}
+
+.section06 {
+  background: white;
+  background: linear-gradient(135deg, white 0%, #d1dddf 100%);
+  padding: 10vh 0 20vh;
+}
+.section06 .section06-text {
+  width: 80%;
+  margin: 0 auto;
+}
+.section06 .section06-text h5 {
+  font-weight: normal;
+  padding: 10px 20px;
+  line-height: 1.25em;
+}
+.section06 .section06-text p.top {
+  padding-left: 40px;
+}
+.section06 .section06-text p.top strong {
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+.section06 .section06-text .section06-area1 .section06-area2 .contents {
+  width: 95%;
+  margin: 0 auto;
+}
+.section06 .section06-text .section06-area1 .section06-area2 .contents p.txt-body {
+  font-size: 0.8em;
+  margin-top: 3vh;
+}
+
+.section07 {
+  background: #02827b;
+  background: white;
+  clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -10vh;
+  padding: 10vh 0 20vh;
+  z-index: 3;
+}
+.section07 .section07-area1 {
+  background: white;
+}
+.section07 .section07-area1 .section07-area2 {
+  background: #dadada;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+.section07 .section07-area1 .img-text p {
+  position: relative;
+  max-width: 30em;
+  background-color: #fff;
+  padding: 1.125em 1.5em;
+  font-size: 0.7em;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+}
+.section07 .section07-area1 .img-text p::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 1.5em;
+  border: 0.75rem solid transparent;
+  border-top: none;
+  border-bottom-color: #fff;
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+}
+
+.section08 {
+  background: #a6ffa6;
+  background: url("../img/img004-chi.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -10vh;
+}
+.section08 .container .section08-01 {
+  width: 75%;
+  padding: 2vh 4vh;
+}
+.section08 .container .section08-01 h2 {
+  margin-bottom: 3vh;
+  color: white;
+}
+.section08 .container .section08-01 ol li {
+  font-size: 0.9em;
+  line-height: 2em;
+  color: white;
+}
+
+.section09 {
+  background: #ff85a1;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/img001-handshake.jpg") no-repeat;
+  clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -5vh;
+  background-position: center;
+  background-size: cover;
+}
+.section09 .section09-01 {
+  width: 80%;
+  margin: 5vh auto;
+}
+.section09 .section09-01 .section09-01-01 {
+  text-align: center;
+  margin-bottom: 3vh;
+}
+.section09 .section09-01 .section09-01-01 .card {
+  box-shadow: 1px 3px 6px rgba(17, 25, 33, 0.6);
+  padding: 20px 0;
+}
+.section09 .section09-01 .section09-01-01 .card .card-title {
+  font-size: 1em;
+}
+
+.section10 {
+  background: #eaffa6;
+  background: url("../img/nile-river.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section10 .container {
+  text-align: center;
+}
+.section10 .container h2 {
+  text-transform: uppercase;
+  margin-bottom: 3vh;
+  color: white;
+  text-shadow: 1px 2px 4px rgba(17, 25, 33, 0.6);
+}
+.section10 .container h2 span {
+  background: rgba(17, 25, 33, 0.6);
+  padding: 5px 10px;
+}
+.section10 .container h3 {
+  color: #f93c1d;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 3px rgba(17, 25, 33, 0.5);
+}
+.section10 .container h3 span {
+  font-size: 0.7em;
+  margin-bottom: 3vh;
+  color: #111921;
+  text-shadow: none;
+}
+.section10 .container h5 {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.section10 .container h5 span {
+  font-weight: bold;
+}
+
+.section11 .section11-01 .rounded-lg {
+  border-radius: 1rem !important;
+}
+.section11 .section11-01 .text-small {
+  font-size: 0.9rem !important;
+}
+.section11 .section11-01 .custom-separator {
+  width: 5rem;
+  height: 6px;
+  border-radius: 1rem;
+  background-color: #02827b;
+}
+.section11 .section11-01 .text-uppercase {
+  letter-spacing: 0.2em;
+}
+.section11 .section11-01 .fa-check:before {
+  color: #02827b;
+}
+.section11 .section11-01 .price-list {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.66);
+}
+.section11 .section11-01 .price-list .title {
+  background: #f93c1d;
+  padding: 20px 10px;
+  color: white;
+}
+.section11 .section11-01 .price-list .price-list-row {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: #ededed;
+}
+.section11 .section11-01 .price-list .price-list-row .list-info {
+  border-left: 1px solid white;
+  padding: 20px 0;
+}
+.section11 .section11-01 .price-list .price-list-row .list-info .price {
+  font-size: 1.5em;
+  color: #02827b;
+}
+.section11 .section11-01 .price-list .price-list-row .list-info .price span {
+  font-size: 0.6em;
+  color: #353535;
+}
+.section11 .section11-01 .price-list .price-list-row .row-header {
+  background: #111921;
+  color: white;
+  padding: 20px 0;
+}
+.section11 .section11-01 .register {
+  margin: 4vh auto;
+  width: 50%;
+}
+.section11 .section11-01 .register .btn {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .section07 .container {
+    width: 100%;
+    max-width: 992px;
+  }
+
+  .section08 .container .section08-01 {
+    width: 100%;
+    padding: 2vh 4vh;
+  }
+
+  .section09 .container {
+    width: 100%;
+  }
+  .section09 .container .section09-01 {
+    width: 100%;
+  }
+  .section09 .container .section09-01 .section09-01-01 h3 {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 768 px) {
+  .section07 .container {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section05 .container .section05-contents .text p {
+    font-size: 0.8em;
+  }
+  .section05 .container .section05-contents .text p strong.emphasis {
+    font-size: 1.25em;
+    text-decoration: underline;
+  }
+  .section05 .container .section05-contents .image {
+    margin: 0 auto;
+  }
+
+  .section11 .section11-01 .price-list {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
