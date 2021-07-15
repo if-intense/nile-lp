@@ -23,15 +23,28 @@ iframe {
         height: 100%;
     }
 }
+
+.navbar {
+    .navbar-nav {
+        a {
+            font-size: 0.8em;
+        }
+    }
+}
 .jumbotron {
-    background: url('../img/top.png') no-repeat;
+    background: url('../img/top-bg1.png') no-repeat;
     background-position: center;
     background-size:cover;
-    height:75vh;
+    // height:75vh;
+    padding-top:37.5%;
+    position:relative;
     .logo-area {
         width:50%;
-        margin:0 auto;
-        padding:10vh 0;
+        position:absolute;
+        top:10%;
+        left:25%;
+        right: 25%;
+        // padding:10vh 0;
     }
 }
 
@@ -45,7 +58,7 @@ iframe {
 background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 100%);
     text-align: center;
     .container {
-        margin:10vh auto;
+       
        h2 {
            font-size:2em;
            color: white;
@@ -59,7 +72,7 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
     background:url('../img/img008.jpg') no-repeat;
     background-position: center;
     background-size: cover;
-    padding:4vh 0;
+    padding:8vh 0;
     
 
     h6 {
@@ -82,6 +95,7 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
     background: url('../img/networking.png') no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 10vh 0 15vh;
     .container {
         padding: 2vh 0;
         .section04-contents {
@@ -102,6 +116,9 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
     background: url('../img/transparent-logo.png') no-repeat;
     background-size: cover;
     background-position: center;
+    clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
+    margin-top: -10vh;
+    padding: 10vh 0;
     .container {
         .section05-contents {
             // background:white;
@@ -131,8 +148,11 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
 .section06 {
     // background: rgb(216, 194, 255);
     // clip-path: ellipse(100% 55% at 50% 40%);
+    clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
+    // margin-top:-10vh;
+    // padding:10vh 0;
     background: rgb(255,255,255);
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(209,221,223,1) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(52,102,144,0.5) 100%);
     padding:10vh 0 20vh;
     .section06-text {
         width:80%;
@@ -149,6 +169,10 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
                 text-transform: uppercase;
                 font-size:1.25em;
             }
+        }
+        ul {
+            // padding: 20px;
+            list-style-image:url('../img/nile-sm2.svg');
         }
         .section06-area1 {
             .section06-area2 {
@@ -190,7 +214,7 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
             p {
                 // layout
                 position: relative;
-                max-width: 30em;
+                // max-width: 30em;
                 
                 // looks
                 background-color: #fff;
@@ -364,7 +388,7 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
                     }
                 }
                 .row-header {
-                    background: $nile-black;
+                    background: #202020;
                     color:white;
                     padding:20px 0;
                 }
@@ -383,6 +407,23 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
 
     }
 }
+
+.section12 {
+    background: $nile-orange;
+    color:$nile-white;
+    .section12-01 {
+        ul {
+            list-style: none;
+            padding:0;
+            li {
+                text-align: center;
+                font-size:1.5em;
+            }
+        }
+    }
+}
+
+
 
 
 @media only screen and (max-width:992px) {
@@ -418,6 +459,30 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
     } 
 }
 
+@media only screen and (max-width:929px) {
+    .section07 {
+        .section07-area1 {
+            .section07-area2 {
+                font-size:0.7em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .section07 {
+        .section07-area1 {
+            .section07-area2 {
+                font-size:0.6em;
+            }
+            .img-text {
+                p {
+                    font-size: 0.6em;
+                }
+            }
+        }
+    }
+}
 
 @media only screen and (min-width:768 px) {
     .section07 {
@@ -429,6 +494,20 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
 }
 @media only screen and (max-width:576px) {
     
+    .section02 {
+        .container {
+            h2 {
+                font-size:1.5em;
+            }
+        }
+    }
+
+    .section03 {
+        h6 {
+            font-size:1.25em;
+        }
+    }
+
     .section05 {
         .container {
             .section05-contents {
@@ -443,6 +522,19 @@ background: linear-gradient(337deg, rgba(250,60,29,1) 0%, rgba(255,255,255,1) 10
                 }
                 .image {
                     margin:0 auto;
+                }
+            }
+        }
+    }
+
+    .section07 {
+        .section07-area1 {
+            .section07-area2 {
+                font-size:0.9em;
+            }
+            .img-text {
+                p {
+                    font-size: 0.8em;
                 }
             }
         }

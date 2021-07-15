@@ -15,16 +15,23 @@ iframe {
   height: 100%;
 }
 
+.navbar .navbar-nav a {
+  font-size: 0.8em;
+}
+
 .jumbotron {
-  background: url("../img/top.png") no-repeat;
+  background: url("../img/top-bg1.png") no-repeat;
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  padding-top: 37.5%;
+  position: relative;
 }
 .jumbotron .logo-area {
   width: 50%;
-  margin: 0 auto;
-  padding: 10vh 0;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  right: 25%;
 }
 
 .section01 {
@@ -37,9 +44,6 @@ iframe {
   background: linear-gradient(337deg, #fa3c1d 0%, white 100%);
   text-align: center;
 }
-.section02 .container {
-  margin: 10vh auto;
-}
 .section02 .container h2 {
   font-size: 2em;
   color: white;
@@ -49,7 +53,7 @@ iframe {
   background: url("../img/img008.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 4vh 0;
+  padding: 8vh 0;
 }
 .section03 h6 {
   text-align: center;
@@ -69,6 +73,7 @@ iframe {
   background: url("../img/networking.png") no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 10vh 0 15vh;
 }
 .section04 .container {
   padding: 2vh 0;
@@ -85,6 +90,9 @@ iframe {
   background: url("../img/transparent-logo.png") no-repeat;
   background-size: cover;
   background-position: center;
+  clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -10vh;
+  padding: 10vh 0;
 }
 .section05 .container .section05-contents {
   padding: 4vh 2vw 0;
@@ -103,8 +111,9 @@ iframe {
 }
 
 .section06 {
+  clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
   background: white;
-  background: linear-gradient(135deg, white 0%, #d1dddf 100%);
+  background: linear-gradient(135deg, white 0%, rgba(52, 102, 144, 0.5) 100%);
   padding: 10vh 0 20vh;
 }
 .section06 .section06-text {
@@ -122,6 +131,9 @@ iframe {
 .section06 .section06-text p.top strong {
   text-transform: uppercase;
   font-size: 1.25em;
+}
+.section06 .section06-text ul {
+  list-style-image: url("../img/nile-sm2.svg");
 }
 .section06 .section06-text .section06-area1 .section06-area2 .contents {
   width: 95%;
@@ -152,7 +164,6 @@ iframe {
 }
 .section07 .section07-area1 .img-text p {
   position: relative;
-  max-width: 30em;
   background-color: #fff;
   padding: 1.125em 1.5em;
   font-size: 0.7em;
@@ -302,7 +313,7 @@ iframe {
   color: #353535;
 }
 .section11 .section11-01 .price-list .price-list-row .row-header {
-  background: #111921;
+  background: #202020;
   color: white;
   padding: 20px 0;
 }
@@ -312,6 +323,19 @@ iframe {
 }
 .section11 .section11-01 .register .btn {
   width: 100%;
+}
+
+.section12 {
+  background: #f93c1d;
+  color: white;
+}
+.section12 .section12-01 ul {
+  list-style: none;
+  padding: 0;
+}
+.section12 .section12-01 ul li {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 992px) {
@@ -335,6 +359,19 @@ iframe {
     font-size: 1em;
   }
 }
+@media only screen and (max-width: 929px) {
+  .section07 .section07-area1 .section07-area2 {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section07 .section07-area1 .section07-area2 {
+    font-size: 0.6em;
+  }
+  .section07 .section07-area1 .img-text p {
+    font-size: 0.6em;
+  }
+}
 @media only screen and (min-width: 768 px) {
   .section07 .container {
     width: 100%;
@@ -342,6 +379,14 @@ iframe {
   }
 }
 @media only screen and (max-width: 576px) {
+  .section02 .container h2 {
+    font-size: 1.5em;
+  }
+
+  .section03 h6 {
+    font-size: 1.25em;
+  }
+
   .section05 .container .section05-contents .text p {
     font-size: 0.8em;
   }
@@ -351,6 +396,13 @@ iframe {
   }
   .section05 .container .section05-contents .image {
     margin: 0 auto;
+  }
+
+  .section07 .section07-area1 .section07-area2 {
+    font-size: 0.9em;
+  }
+  .section07 .section07-area1 .img-text p {
+    font-size: 0.8em;
   }
 
   .section11 .section11-01 .price-list {
