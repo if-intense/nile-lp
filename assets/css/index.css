@@ -466,6 +466,10 @@ footer .container ul li {
   .section07 .container .section07-area1 .inner-wrapper .img-text p {
     font-size: 0.8em;
   }
+
+  .section11 .section11-01 .price-list {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .section02 .container h2 {
@@ -519,6 +523,9 @@ footer .container ul li {
   }
 
   .section11 .section11-01 .register {
+    width: 100%;
+  }
+  .section11 .section11-01 .price-list {
     width: 100%;
   }
   .section11 .section11-01 .price-list .list-info .benefits {
