@@ -447,18 +447,34 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
 .section13 {
     background: #B1C3D3;
     .container {
+        h2 {
+            text-transform: uppercase;
+        }
        .steps {
-            h3 {
-                font-size: 0.9em;
-                text-align: center;
-                text-transform: uppercase;
-                padding:10px 0;
-                border-bottom:1px solid $nile-black;
+        
+            .txt {
                 background: white;
-            }
-            p {
-                font-size: 0.8em;
-                text-align: center;
+                height: 100%;
+                border-radius: 5px;
+                
+                h3 {
+                    font-size: 0.8em;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding:10px 0;
+                    border-bottom:1px solid $nile-black;
+                    background: rgb(2,130,123);
+                    background: linear-gradient(337deg, rgba(2,130,123,1) 0%, rgba(255,255,255,1) 100%);
+                    color:$nile-white;
+                    text-shadow: 1px 1px 1px rgba($nile-black, $alpha: 0.5);
+                }
+                p {
+                    font-size: 0.8em;
+                    text-align:center;
+                }
+                dl {
+                    font-size: 0.8em;
+                }
             }
        }
        p.details {
