@@ -267,7 +267,7 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
 
 .section08 {
     background: rgb(166, 255, 166);
-    background: url('../img/img004-chi.jpg') no-repeat;
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url('../img/img004-chi.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);

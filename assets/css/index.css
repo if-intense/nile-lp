@@ -138,6 +138,9 @@ iframe {
 .section06 .section06-text ul {
   list-style-image: url("../img/nile-sm2.svg");
 }
+.section06 .section06-text ul:marker {
+  font-size: 24px;
+}
 .section06 .section06-text .card {
   background: transparent;
   border: none;
@@ -195,7 +198,7 @@ iframe {
 
 .section08 {
   background: #a6ffa6;
-  background: url("../img/img004-chi.jpg") no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../img/img004-chi.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   clip-path: polygon(50% 3vh, 100% 0, 100% 100%, 0 100%, 0 0);
