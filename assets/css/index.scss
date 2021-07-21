@@ -3,7 +3,15 @@ $nile-blue: rgb(10,84,139);
 $nile-black: rgb(17,25,33);
 $nile-white: rgb(255,255,255);
 $nile-green: rgb(2,130,123);
+$nile-yellow: rgb(249,190,60);
 
+.btn-success {
+    background: #02827B !important;
+}
+
+mark {
+    background: #02827B !important;
+}
 
 html, body {
    height: 100%;
@@ -25,6 +33,21 @@ iframe {
     height: 100%;
     // width: 100%;
 }
+
+.viewer {
+    color: $nile-yellow;
+}
+
+.exhibitor {
+    color: $nile-orange;
+}
+
+.exhibitor {
+    color: $nile-green;
+}
+
+
+
 
 .modal {
     .modal-body {
@@ -74,7 +97,7 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
 .section03 {
     // // background:yellow;
     // padding:10vh auto;
-    background:url('../img/img008.jpg') no-repeat;
+    background:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.4)),url('../img/img008.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     padding:8vh 0;
@@ -317,6 +340,9 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
                     // color:red;
                 }
             }
+            .card.success {
+                border: 3px solid $nile-black;
+            }
             
         }
     }
@@ -380,6 +406,7 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
         
         .text-uppercase {
         letter-spacing: 0.2em;
+        font-size:1.5em;
         }
 
         .fa-check:before {
@@ -391,7 +418,7 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
             margin: 0 auto;
             box-shadow: 1px 3px 6px rgba(0,0,0,0.66);
             .title {
-                background: $nile-orange;
+                background: $nile-black;
                 padding:20px 10px;
                 color:$nile-white;
             }
@@ -405,6 +432,10 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
                     .price {
                         font-size:1.5em;
                         color:$nile-green;
+                        em {
+                            font-style: normal;
+                            text-decoration: line-through;
+                        }
                         span {
                             font-size:0.6em;
                             color:#353535;
@@ -412,7 +443,35 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
                     }
                 }
                 .row-header {
-                    background: #202020;
+                    background: $nile-green;
+                    color:white;
+                    padding:20px 0;
+                }
+                
+                
+            }
+            .negotiation-list-row {
+                border-top:1px solid $nile-white;
+                border-bottom: 1px solid $nile-white;
+                background:rgb(237, 237, 237);
+                .list-info {
+                    border-left:1px solid $nile-white;
+                    padding:20px 0;
+                    .price {
+                        font-size:1.5em;
+                        color:$nile-green;
+                        em {
+                            font-style: normal;
+                            text-decoration: line-through;
+                        }
+                        span {
+                            font-size:0.6em;
+                            color:#353535;
+                        }
+                    }
+                }
+                .row-header {
+                    background: $nile-orange;
                     color:white;
                     padding:20px 0;
                 }
@@ -423,10 +482,41 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
 
         .register {
             margin:4vh auto;
-            width:50%;
+            text-align: center;
             .btn {
                 width: 100%;
             }
+        }
+
+        dl {
+            width:100%;
+            margin: 0 auto;
+            max-width:320px;
+        }
+        
+        dt,
+        dd {
+            box-sizing: border-box;
+            padding: 5px 10px;
+        }
+        
+        dt {
+            float: left;
+            width: 10%;
+            padding-bottom: 0;
+        }
+        
+        dd {
+            background-color: #fff;
+        }
+        
+        dd:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        del {
+            color:grey;
         }
 
     }
@@ -517,7 +607,19 @@ footer {
 
 
 
+
+
+
+
+
 @media only screen and (max-width:992px) {
+    .section05 {
+        .container {
+            width: 100%;
+            max-width: 992px;
+        }
+    }
+    
     .section07 {
         .container {
             width: 100%;
@@ -548,6 +650,12 @@ footer {
             }
         }
     } 
+    .section11 {
+        .container {
+            width: 100%;
+            max-width: 972px;
+        }
+    }
 }
 
 @media only screen and (max-width:934px) {
@@ -585,6 +693,9 @@ footer {
 }
 
 @media only screen and (min-width:768 px) {
+
+    
+
     .section07 {
         .container {
             width: 100%;
@@ -594,6 +705,19 @@ footer {
 }
 
 @media only screen and (max-width:767.98px) {
+
+    .section06 {
+        .container {
+            width: 100%;
+            max-width: 768px;    
+               
+        }
+        .section06-text {
+            width: 100%;
+        }     
+
+    } 
+
     .section07 {
         .container {
             width:100%;

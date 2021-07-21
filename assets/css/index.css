@@ -1,3 +1,11 @@
+.btn-success {
+  background: #02827B !important;
+}
+
+mark {
+  background: #02827B !important;
+}
+
 html, body {
   height: 100%;
 }
@@ -16,6 +24,18 @@ section {
 
 iframe {
   height: 100%;
+}
+
+.viewer {
+  color: #f9be3c;
+}
+
+.exhibitor {
+  color: #f93c1d;
+}
+
+.exhibitor {
+  color: #02827b;
 }
 
 .modal .modal-body {
@@ -53,7 +73,7 @@ iframe {
 }
 
 .section03 {
-  background: url("../img/img008.jpg") no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4)), url("../img/img008.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   padding: 8vh 0;
@@ -242,6 +262,9 @@ iframe {
 .section09 .section09-01 .section09-01-01 .card .card-title {
   font-size: 1em;
 }
+.section09 .section09-01 .section09-01-01 .card.success {
+  border: 3px solid #111921;
+}
 
 .section10 {
   background: #eaffa6;
@@ -295,6 +318,7 @@ iframe {
 }
 .section11 .section11-01 .text-uppercase {
   letter-spacing: 0.2em;
+  font-size: 1.5em;
 }
 .section11 .section11-01 .fa-check:before {
   color: #02827b;
@@ -305,7 +329,7 @@ iframe {
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.66);
 }
 .section11 .section11-01 .price-list .title {
-  background: #f93c1d;
+  background: #111921;
   padding: 20px 10px;
   color: white;
 }
@@ -322,21 +346,77 @@ iframe {
   font-size: 1.5em;
   color: #02827b;
 }
+.section11 .section11-01 .price-list .price-list-row .list-info .price em {
+  font-style: normal;
+  text-decoration: line-through;
+}
 .section11 .section11-01 .price-list .price-list-row .list-info .price span {
   font-size: 0.6em;
   color: #353535;
 }
 .section11 .section11-01 .price-list .price-list-row .row-header {
-  background: #202020;
+  background: #02827b;
+  color: white;
+  padding: 20px 0;
+}
+.section11 .section11-01 .price-list .negotiation-list-row {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: #ededed;
+}
+.section11 .section11-01 .price-list .negotiation-list-row .list-info {
+  border-left: 1px solid white;
+  padding: 20px 0;
+}
+.section11 .section11-01 .price-list .negotiation-list-row .list-info .price {
+  font-size: 1.5em;
+  color: #02827b;
+}
+.section11 .section11-01 .price-list .negotiation-list-row .list-info .price em {
+  font-style: normal;
+  text-decoration: line-through;
+}
+.section11 .section11-01 .price-list .negotiation-list-row .list-info .price span {
+  font-size: 0.6em;
+  color: #353535;
+}
+.section11 .section11-01 .price-list .negotiation-list-row .row-header {
+  background: #f93c1d;
   color: white;
   padding: 20px 0;
 }
 .section11 .section11-01 .register {
   margin: 4vh auto;
-  width: 50%;
+  text-align: center;
 }
 .section11 .section11-01 .register .btn {
   width: 100%;
+}
+.section11 .section11-01 dl {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 320px;
+}
+.section11 .section11-01 dt,
+.section11 .section11-01 dd {
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+.section11 .section11-01 dt {
+  float: left;
+  width: 10%;
+  padding-bottom: 0;
+}
+.section11 .section11-01 dd {
+  background-color: #fff;
+}
+.section11 .section11-01 dd:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.section11 .section11-01 del {
+  color: grey;
 }
 
 .section12 {
@@ -413,6 +493,11 @@ footer .container ul li {
 }
 
 @media only screen and (max-width: 992px) {
+  .section05 .container {
+    width: 100%;
+    max-width: 992px;
+  }
+
   .section07 .container {
     width: 100%;
     max-width: 992px;
@@ -431,6 +516,11 @@ footer .container ul li {
   }
   .section09 .container .section09-01 .section09-01-01 h3 {
     font-size: 1em;
+  }
+
+  .section11 .container {
+    width: 100%;
+    max-width: 972px;
   }
 }
 @media only screen and (max-width: 934px) {
@@ -456,6 +546,14 @@ footer .container ul li {
   }
 }
 @media only screen and (max-width: 767.98px) {
+  .section06 .container {
+    width: 100%;
+    max-width: 768px;
+  }
+  .section06 .section06-text {
+    width: 100%;
+  }
+
   .section07 .container {
     width: 100%;
     max-width: 414px;
