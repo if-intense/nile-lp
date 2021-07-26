@@ -38,7 +38,7 @@ iframe {
     color: $nile-yellow;
 }
 
-.exhibitor {
+.negotiator {
     color: $nile-orange;
 }
 
@@ -318,6 +318,10 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
     }
 } 
 
+:root {
+    counter-reset: headings;
+}
+
 .section09 {
     background: rgb(255, 133, 161);
     background:linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)), url('../img/img001-handshake.jpg') no-repeat;
@@ -338,6 +342,10 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
                 .card-title {
                     font-size:1em;
                     // color:red;
+                    counter-increment: headings;
+                }
+                .card-title::before {
+                    content:counter(headings);
                 }
             }
             .card.success {
@@ -401,7 +409,19 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
         width: 5rem;
         height: 6px;
         border-radius: 1rem;
-        background-color: $nile-green;
+        // background-color: $nile-blue;
+        }
+
+        .custom-separator.viewer {
+            background: $nile-yellow;
+        }
+
+        .custom-separator.negotiator {
+            background: $nile-orange;
+        }
+
+        .custom-separator.exhibitor {
+            background: $nile-green;
         }
         
         .text-uppercase {

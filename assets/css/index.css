@@ -30,7 +30,7 @@ iframe {
   color: #f9be3c;
 }
 
-.exhibitor {
+.negotiator {
   color: #f93c1d;
 }
 
@@ -239,6 +239,10 @@ iframe {
   color: white;
 }
 
+:root {
+  counter-reset: headings;
+}
+
 .section09 {
   background: #ff85a1;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/img001-handshake.jpg") no-repeat;
@@ -261,6 +265,10 @@ iframe {
 }
 .section09 .section09-01 .section09-01-01 .card .card-title {
   font-size: 1em;
+  counter-increment: headings;
+}
+.section09 .section09-01 .section09-01-01 .card .card-title::before {
+  content: counter(headings);
 }
 .section09 .section09-01 .section09-01-01 .card.success {
   border: 3px solid #111921;
@@ -314,7 +322,15 @@ iframe {
   width: 5rem;
   height: 6px;
   border-radius: 1rem;
-  background-color: #02827b;
+}
+.section11 .section11-01 .custom-separator.viewer {
+  background: #f9be3c;
+}
+.section11 .section11-01 .custom-separator.negotiator {
+  background: #f93c1d;
+}
+.section11 .section11-01 .custom-separator.exhibitor {
+  background: #02827b;
 }
 .section11 .section11-01 .text-uppercase {
   letter-spacing: 0.2em;

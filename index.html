@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Deviating from Attending Exhibition in person, Creating New Norms of Business Matching through Online!">
+    <!-- vue-->
+    <script src="https://unpkg.com/vue"></script>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <!-- CSS only -->
@@ -28,9 +30,9 @@
           <a class="nav-link" href="#">ESP</a>
           <a class="nav-link" href="#">FRA</a>
           <a class="nav-link" href="#">CN</a>
-        </div><!-- /.navbar-nav -->
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+      </div>
+    </div>
   </nav>
 
 
@@ -121,7 +123,7 @@
         <section class="section06">
 
             <div class="container">
-              <div class="section06-text p-0">
+              <div class="section06-text p-0" id="app">
                 <h4>With NILE, you can...</h4>
 
                 <!-- <h5 data-aos="fade-up">You will be able to cut time and costs at Exhibitions</h5>
@@ -131,142 +133,24 @@
                 <!-- <h5 data-aos="fade-up">2. Match with companies across the globe.</h5> -->
 
                <div class="row">
-                <div class="col-lg-3 col-sm-6 mb-3">
+                <div class="col-lg-3 col-sm-6 mb-3" v-for="capability in capabilities">
                   <div class="card h-100" data-aos="zoom-right">
-                    <img src="assets/img/img014.png" alt="exhibition" class="img-fluid">
+                    <img :src="capability.image" alt="exhibition" class="img-fluid">
                     <div class="card-body">
-                      <p class="card-text smaller"><strong>1. </strong>Cut time and cost.  Only costs are Exhibition and Negotiation chat fees.  </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-3">
-                  <div class="card h-100" data-aos="zoom-right">
-                    <img src="assets/img/img017.png" alt="exhibition" class="img-fluid">
-                    <div class="card-body">
-                      <p class="card-text smaller"><strong>2. </strong>Match with companies internationally.</p>
+                      <p class="card-text smaller"><strong>{{ capability.number }}. </strong>{{ capability.text }} </p>
                     </div>
                   </div>
                 </div>
                 
-                <div class="col-lg-3 col-sm-6 mb-3">
-                  <div class="card h-100" data-aos="zoom-right">
-                    <img src="assets/img/img016.png" alt="exhibition" class="img-fluid">
-                    <div class="card-body">
-                      <p class="card-text smaller"><strong>3. </strong>Chat casually.  Use stickers!</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mb-3">
-                  <div class="card h-100" data-aos="zoom-right">
-                    <img src="assets/img/flag.png" alt="exhibition" class="img-fluid">
-                    <div class="card-body">
-                      <p class="card-text smaller"><strong>4. </strong>Chat in multiple languages.</p>
-                    </div>
-                  </div>
-                </div>
                </div>
 
                 <hr>
 
-                <!-- <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card h-100" data-aos="zoom-right">
-                      <img src="assets/img/img007.png" alt="exhibition" class="img-fluid">
-                      <div class="card-body">
-                        <p class="card-text smaller"><strong>2. </strong>Avoiding cancellations and postponements of Exhibitions, you'd like to hold an event regularly.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card h-100" data-aos="zoom-right">
-                      <img src="assets/img/img007.png" alt="exhibition" class="img-fluid">
-                      <div class="card-body">
-                        <p class="card-text smaller"><strong>3. </strong>Avoiding cancellations and postponements of Exhibitions, you'd like to hold an event regularly.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card h-100" data-aos="zoom-right">
-                      <img src="assets/img/img007.png" alt="exhibition" class="img-fluid">
-                      <div class="card-body">
-                        <p class="card-text smaller"><strong>4. </strong>Avoiding cancellations and postponements of Exhibitions, you'd like to hold an event regularly.</p>
-                      </div>
-                    </div>
-                  </div>
-                 </div> -->
-
-                <!-- <h5 data-aos="fade-up">3. Use the chat to talk and negotiate.  Use stickers in the chat to converse casually.</h5>
-
-                <div class="col-lg-4 offset-lg-4">
-                  <div class="card h-100" data-aos="zoom-right">
-                    <img src="assets/img/img007.png" alt="exhibition" class="img-fluid">
-                    <div class="card-body">
-                      <p class="card-text smaller"><strong>a. </strong>Avoiding cancellations and postponements of Exhibitions, you'd like to hold an event regularly.</p>
-                    </div>
-                  </div>
-                </div>
                 
-                <hr>
 
-                <h5 data-aos="fade-up">4. Negotiate with foreign companies as NILE supports multiple languages.</h5>
-
-                <div class="col-lg-4 offset-lg-4">
-                  <div class="card h-100" data-aos="zoom-right">
-                    <img src="assets/img/img007.png" alt="exhibition" class="img-fluid">
-                    <div class="card-body">
-                      <p class="card-text smaller"><strong>a. </strong>Avoiding cancellations and postponements of Exhibitions, you'd like to hold an event regularly.</p>
-                    </div>
-                  </div>
-                </div> -->
-                
-                <!-- <h5 data-aos="fade-up">2. You will be able to solve problems and increase the probabilities in...</h5> -->
-            
-                <!-- <div class="row row-cols-1 row-cols-md-3 g-4 mt-2 mb-5">
-                  <div class="col">
-                    <div class="card h-100" data-aos="zoom-right">
-                      <img src="assets/img/img007.png" alt="exhibition" class="img-fluid">
-                      <div class="card-body">
-                        <p class="card-text smaller"><strong>a. </strong>Avoiding cancellations and postponements of Exhibitions, you'd like to hold an event regularly.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100" data-aos="zoom-right">
-                      <img src="assets/img/img006.png" alt="exhibition" class="img-fluid">
-                      <div class="card-body">
-                        <p class="card-text smaller"><strong>b. </strong>Expanding the sales channel in both domestically and internationally.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="card h-100" data-aos="zoom-right">
-                      <img src="assets/img/img005.png" alt="exhibition" class="img-fluid">
-                      <div class="card-body">
-                        <p class="card-text smaller"><strong>c. </strong>Selecting the target audience.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-            
-                <!-- <hr> -->
-
-                <!-- <h5 data-aos="fade-up">3. Solutions</h5>
-                <ul data-aos="fade-up">
-                  <li>Easy to Use!</li>
-                  <li>Anytime, Anywhere! Available regardless of timezone difference!</li>
-                  <li>Everything at your fingertips!</li>
-                </ul> -->
-
-                <!-- <hr>   -->
-                <!-- <h5>With NILE, it is possible to find </h5> -->
-
-                <!-- <h5 data-aos="fade-up">You will be able to meet with <strong>Exhibitors</strong> who want to sell their products, <strong>Distributors/Buyers</strong> that wants to sell the products they purchased. <br>
-                    You can start by becoming a <strong>Viewer</strong>, which is free!
-                </h5> -->
-
-                <h5 class-"lh-base" data-aos="fade-up">By becoming an Exhibitor, you can post articles, product/company information</h5>
-                <h5 class-"lh-base" data-aos="fade-up">By becoming a Negotiator, you can view Exhibitor's information.</h5>
-                <h5 class-"lh-base" data-aos="fade-up">With referrals, you can get additional tickets.</h5>
+                <p data-aos="zoom-in">By becoming an Exhibitor, you can post articles, product/company information.</p>
+                <p data-aos="zoom-in">By becoming a Negotiator, you can view Exhibitor's information.</p>
+                <p data-aos="zoom-in">With referrals, you can get additional tickets.</p>
                 <a href="https://nile.inc/users/sign_up?locale=en&pos=seller" class="btn btn-success">Register Now</a>
               </div>
 
@@ -279,48 +163,25 @@
 
         <section class="section07">
             
-            <div class="container">
+            <div class="container" id="new">
               <h2 class="mb-3">You can start easily with NILE.</h2>
                 <div class="row col-xl-10 offset-xl-1 col-lg-12 col-md-12">
-                    <div class="col-lg-4 col-md-4 section07-area1">
-                      <div class="inner-wrapper">
-                        <div class="section07-area2">
-                          You would need to download apps or software to match online.<span>*</span> 
-                      </div>
-                      <div class="img">
-                          <img src="assets/img/img011.png" alt="image" class="img-fluid">
-                          <div class="img-text">
-                              <p>No need to purchase to PC or Smartphone. Use it directly. Quick and Easy!</p>
-                          </div>
-                      </div>
-                      </div>
+                  <div class="col-lg-4 col-md-4 section07-area1" v-for="accomplish in accomplishments">
+                    <div class="inner-wrapper">
+                      <div class="section07-area2">
+                        {{accomplish.task}} 
                     </div>
-                    <div class="col-lg-4 col-md-4 section07-area1">
-                        <div class="inner-wrapper">
-                          <div class="section07-area2">
-                            You don't know how much people are viewing or how they are responding.<span>*</span>
-                        </div>
-                        <div class="img">
-                          <img src="assets/img/img013.png" alt="image" class="img-fluid">
-                            <div class="img-text">
-                                <p>You can check how much one is viewing, or interested in your company.</p>
-                            </div>
-                        </div>
+                    <div class="img">
+                        <img :src="accomplish.image" alt="image" class="img-fluid">
+                        <div class="img-text">
+                            <p>{{accomplish.solution}}</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 section07-area1">
-                        <div class="inner-wrapper">
-                          <div class="section07-area2">
-                            You are hosting events and webinars, but the negotiation rate is underwhelming.<span>*</span>
-                        </div>
-                        <div class="img">
-                          <img src="assets/img/img012.png" alt="image" class="img-fluid">
-                            <div class="img-text">
-                                <p>By using the stickers in the chat, you will have a smoother communication.</p>
-                            </div>
-                        </div>
-                        </div>
                     </div>
+                  </div>
+                    
+                   
+                    
                 </div>
 
                 <p class="text-center my-3 small">* These are the tasks that this service is trying to solve.</p>
@@ -340,6 +201,8 @@
                   <li data-aos="fade-right">View Exhibitor's information at any time if you choose to become a Negotiating Company.</li>
                   <li data-aos="fade-right">Get additional free tickets if you introduce this service to other companies. </li>
               </ol>
+
+              
   
               <div>
                   <a class="btn btn-primary" href="https://nile.inc/users/sign_up?locale=en&pos=seller">Register Now</a>
@@ -352,35 +215,28 @@
         <section class="section09">
             <h2 class="text-center">NILE is a B2B Online Matching Service</h2>
             <div class="container">
-              <!-- <ol>
-                <li>Register (Exhibitor, Negotiator, Viewer)</li>
-                <li>Browse</li>
-                <li>View/Meet</li>
-                <li>Match (Have Your Ticket Ready)</li>
-                <li>Start Chat</li>
-                <li>SUCCESS!!</li>
-              </ol> -->
+
               <div class="section09-01">
                 <div class="row justify-content-center">
                   <div class="section09-01-01 col-lg-4 col-md-4 col-sm-4 col-4">
                     <div class="card">
                       
                       <img src="assets/img/img01.png" alt="Register" class="card-img-top img-fluid">
-                      <div class="card-body"><h3 class="card-title">1. Register</h3></div>
+                      <div class="card-body"><h3 class="card-title">. Register</h3></div>
                     </div>
                   </div>
                   <div class="section09-01-01 col-lg-4 col-md-4 col-sm-4 col-4">
                     <div class="card">
                       
                       <img src="assets/img/img02.png" alt="Register" class="card-img-top img-fluid">
-                      <div class="card-body"><h3 class="card-title">2. Browse</h3></div>
+                      <div class="card-body"><h3 class="card-title">. Browse</h3></div>
                     </div>
                   </div>
                   <div class="section09-01-01 col-lg-4 col-md-4 col-sm-4 col-4">
                     <div class="card">
                       
                       <img src="assets/img/img03.png" alt="Register" class="card-img-top img-fluid">
-                      <div class="card-body"><h3 class="card-title">3. View/Meet</h3></div>
+                      <div class="card-body"><h3 class="card-title">. View/Meet</h3></div>
                     </div>
                   </div>
                 </div>
@@ -389,23 +245,23 @@
                     <div class="card">
                       
                       <img src="assets/img/img04.png" alt="Register" class="card-img-top img-fluid">
-                      <div class="card-body"><h3 class="card-title">4. Match</h3></div>
+                      <div class="card-body"><h3 class="card-title">. Match</h3></div>
                     </div>
                   </div>
                   <div class="section09-01-01 col-lg-4 col-md-4 col-sm-4 col-4">
                     <div class="card">
                       
                       <img src="assets/img/img05.png" alt="Register" class="card-img-top img-fluid">
-                      <div class="card-body"><h3 class="card-title">5. Start Chat</h3></div>
+                      <div class="card-body"><h3 class="card-title">. Start Chat</h3></div>
                     </div>
                   </div>
                 </div>
                 <div class="row justify-content-center">
                   <div class="section09-01-01 col-lg-4 col-md-4 col-sm-4 col-4">
+                    <h2 class="display-1"><i><i class="fas fa-caret-down"></i></i></h2>
                     <div class="card success">
-                      
                       <img src="assets/img/img06.png" alt="Register" class="card-img-top img-fluid">
-                      <div class="card-body"><h3 class="card-title">6. Sucess</h3></div>
+                      <div class="card-body"><h3 class="card-title2">Sucess</h3></div>
                     </div>
                   </div>
                 </div>
@@ -426,32 +282,8 @@
                         <h1 class="text-uppercase font-weight-bold viewer">Viewer</h1>
                        
               
-                        <div class="custom-separator my-4 mx-auto"></div>
+                        <div class="custom-separator viewer my-4 mx-auto"></div>
               
-                        <!-- <ul class="list-unstyled my-5 text-small text-left">
-                          <li class="mb-3">
-                            <i class="fa fa-check mr-2 text-primary"></i> View</li>
-                            <li class="mb-3 text-muted">
-                                <i class="fa fa-times mr-2"></i>
-                                <del>Start Negotiation</del>
-                              </li>
-                              <li class="mb-3 text-muted">
-                                <i class="fa fa-times mr-2"></i>
-                                <del>Purchase Negotiation Tickets</del>
-                              </li>
-                              <li class="mb-3 text-muted">
-                                <i class="fa fa-times mr-2"></i>
-                                <del>Referral System</del>
-                              </li>
-                              <li class="mb-3 text-muted">
-                                <i class="fa fa-times mr-2"></i>
-                                <del>Post Articles</del>
-                              </li>
-                              <li class="mb-3 text-muted">
-                                <i class="fa fa-times mr-2"></i>
-                                <del>Advertise</del>
-                              </li>
-                        </ul> -->
                         <dl>
                           <dt><i class="fa fa-check mr-2 text-primary"></i></dt>
                           <dd>View</dd>
@@ -478,7 +310,7 @@
                         <h1 class="text-uppercase font-weight-bold negotiator">Negotiator</h1>
                         
               
-                        <div class="custom-separator my-4 mx-auto"></div>
+                        <div class="custom-separator negotiator my-4 mx-auto"></div>
               
                         <!-- <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
                           <li class="mb-3">
@@ -525,7 +357,7 @@
                         <h1 class="text-uppercase font-weight-bold exhibitor">Exhibitor</h1>
                         
               
-                        <div class="custom-separator my-4 mx-auto"></div>
+                        <div class="custom-separator exhibitor my-4 mx-auto"></div>
               
                         <!-- <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
                           <li class="mb-3">
@@ -577,19 +409,19 @@
                   <div class="row price-list-body g-0 price-list-row">
                     <div class="row-header col-lg-4 col-md-4 col-sm-4 col-12"><div class="content-header">Monthly Plan</div></div>
                     <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="price"><em>$500</em><br><span>NOW FREE!</span></div></div>
-                    <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="benefits">Effective until March 31st, 2022<br><i class="fas fa-plus"></i><br>10 Free Negotiation Tickets</div></div>
+                    <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="benefits">10 Free Negotiation Tickets <span class="text-primary">*</span></div></div>
                   </div>
 
                   <div class="row price-list-body g-0 price-list-row">
                     <div class="row-header col-lg-4 col-md-4 col-sm-4 col-12"><div class="content-header">6-Month Plan</div></div>
                     <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="price"><em>$2400</em><br><span>NOW FREE!</span></div></div>
-                    <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="benefits">10 Free Negotiation Tickets</div></div>
+                    <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="benefits">10 Free Negotiation Tickets <span class="text-primary">*</span></div></div>
                   </div>
 
                   <div class="row price-list-body g-0 price-list-row">
                     <div class="row-header col-lg-4 col-md-4 col-sm-4 col-12"><div class="content-header">12-Month Plan</div></div>
                     <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="price"><em>$3600</em><br><span>NOW FREE!</span></div></div>
-                    <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="benefits">30 Free Negotiation Tickets</div></div>
+                    <div class="list-info my-auto col-lg-4 col-md-4 col-sm-4 col-6"><div class="benefits">30 Free Negotiation Tickets <span class="text-primary">*</span></div></div>
                   </div>
 
                   <div class="row price-list-body g-0 negotiation-list-row">
@@ -607,6 +439,7 @@
                 </div>
 
                 <div class="register col-lg-6 col-md-8 col-sm-12">
+                  <p class="text-primary"><span>*</span>Effective until March 31st, 2022</p>
                   <h5 class="mb-5"><strong><u>You'll Be Able to Use this Service for Free!</u></strong></h5>
                   <a href="https://nile.inc/users/sign_up?locale=en&pos=seller" class="btn btn-primary">Register Now!</a>
                 </div>
@@ -639,12 +472,6 @@
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-12 mb-5 steps">
                   <div class="txt">
                     <h3>2. Input e-mail and create a password</h3>
-                    <!-- <dl class="px-2">
-                      <dt>Viewer</dt>
-                      <dd>View without verifications, but unable to use all functions</dd>
-                      <dt>Negotiator/Exhibitor</dt>
-                      <dd>Input company informatiomn</dd>
-                    </dl> -->
                     <h6 class="text-center"><u>Viewer</u></h6>
                     <p>View without verifications, but unable to use all functions</p>
                     <h6 class="text-center"><u>Negotiator/Exhibitor</u></h6>
@@ -702,6 +529,7 @@
     
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/app.js"></script>
 <script>
   AOS.init();
 </script>
