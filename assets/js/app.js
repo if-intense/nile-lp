@@ -15,7 +15,7 @@ var tr = new Vue ({
     data: {
         accomplishments: [
             {task: 'You would need to download apps or software to match online.*', solution: 'No need to purchase to PC or Smartphone. Use it directly. Quick and Easy!', image:'assets/img/img011.png' },
-            {task: 'You don&#39;t know how much people are viewing or how they are responding.*', solution: 'You can check how much one is viewing, or interested in your company.', image:'assets/img/img013.png' },
+            {task: 'You do not know how much people are viewing or how they are responding.*', solution: 'You can check how much one is viewing, or interested in your company.', image:'assets/img/img013.png' },
             {task: 'You are hosting events and webinars, but the negotiation rate is underwhelming.*', solution: 'By using the stickers in the chat, you will have a smoother communication.', image:'assets/img/img012.png' },
         ]
     }
