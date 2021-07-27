@@ -383,7 +383,17 @@ iframe {
 }
 .section11 .section11-01 .price-list .price-list-row .list-info .price em {
   font-style: normal;
-  text-decoration: line-through;
+  position: relative;
+}
+.section11 .section11-01 .price-list .price-list-row .list-info .price em:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 40%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: inherit;
+  transform: rotate(10deg);
 }
 .section11 .section11-01 .price-list .price-list-row .list-info .price span {
   font-size: 0.6em;

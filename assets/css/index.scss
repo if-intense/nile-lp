@@ -476,7 +476,18 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
                         color:$nile-black;
                         em {
                             font-style: normal;
-                            text-decoration: line-through;
+                            // text-decoration: line-through;
+                            position:relative;
+                        }
+                        em:before {
+                            position:absolute;
+                            content:"";
+                            left: 0;
+                            top: 40%;
+                            right: 0;
+                            border-top: 3px solid;
+                            border-color:inherit;
+                            transform: rotate(10deg);
                         }
                         span {
                             font-size:0.6em;
