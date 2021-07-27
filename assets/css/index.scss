@@ -9,9 +9,22 @@ $nile-yellow: rgb(249,190,60);
     background: #02827B !important;
 }
 
+.btn-primary {
+    background: $nile-blue !important;
+    border-color:none;
+}
+
+.btn-video {
+    background: $nile-orange !important;
+}
+
+
+
 mark {
     background: #02827B !important;
 }
+
+
 
 html, body {
    height: 100%;
@@ -132,7 +145,9 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
                color:$nile-black;
             //    text-shadow: 1px 3px 6px rgba($nile-black, 0.6);
                margin-bottom:5vh;
-               
+           }
+           button {
+               color:$nile-white;
            }
 
         }
@@ -329,6 +344,9 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
     margin-top: -5vh;
     background-position: center;
     background-size:cover;
+    h2 {
+        color: $nile-yellow;
+    }
     .section09-01 {
         width:80%;
         margin: 5vh auto;
@@ -336,6 +354,10 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
             text-align:center;
             // background:$nile-white;
             margin-bottom:3vh;
+            h4 {
+                color: $nile-yellow;
+                font-size:3em;
+            }
             .card {
                 box-shadow: 1px 3px 6px rgba($nile-black, 0.6);
                 padding:20px 0;
@@ -349,7 +371,7 @@ background: linear-gradient(337deg, rgba(234,237,236,1) 0%, rgba(255,255,255,1) 
                 }
             }
             .card.success {
-                border: 3px solid $nile-black;
+                border: 3px solid $nile-yellow;
             }
             
         }
@@ -652,7 +674,7 @@ footer {
             .section08-01 {
                 width: 100%;
                 // background:rgba($nile-white, $alpha: 0.5);
-                padding:2vh 4vh;
+                padding:2vh 0;
             }
         }
     } 
@@ -757,6 +779,14 @@ footer {
             }
         }
     }
+
+    .section08 {
+        .container {
+            .section08-01 {
+                padding: 2vh 0;
+            }
+        }
+    }
     .section11 {
         .section11-01 {
             .price-list {
@@ -789,7 +819,7 @@ footer {
             .section05-contents {
                 .text {
                     p {
-                        font-size:0.8em;
+                        font-size:1em;
                         strong.emphasis {
                             font-size:1.25em;
                             text-decoration: underline;
@@ -811,6 +841,19 @@ footer {
             .img-text {
                 p {
                     font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+    .section08 {
+        .container {
+            .section08-01 {
+                padding: 2vh 0;
+                ol {
+                    li {
+                        font-size:1em;
+                    }
                 }
             }
         }
@@ -856,10 +899,20 @@ footer {
                     .card-body {
                         padding:0;
                         .card-title {
-                            font-size: 0.6em;
+                            font-size: 0.8em;
                             margin-top:10px;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .section10 {
+        .container {
+            h3 {
+                span {
+                    font-size:0.5em;
                 }
             }
         }
@@ -874,7 +927,7 @@ footer {
                 width: 100%;
                 .list-info {
                     .benefits {
-                        font-size:0.7em;
+                        font-size:0.9em;
                     }
                 }
             }

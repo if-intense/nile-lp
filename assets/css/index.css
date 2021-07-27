@@ -2,6 +2,15 @@
   background: #02827B !important;
 }
 
+.btn-primary {
+  background: #0a548b !important;
+  border-color: none;
+}
+
+.btn-video {
+  background: #f93c1d !important;
+}
+
 mark {
   background: #02827B !important;
 }
@@ -107,6 +116,9 @@ iframe {
 .section04 .container .section04-contents h2 {
   color: #111921;
   margin-bottom: 5vh;
+}
+.section04 .container .section04-contents button {
+  color: white;
 }
 
 .section05 {
@@ -251,6 +263,9 @@ iframe {
   background-position: center;
   background-size: cover;
 }
+.section09 h2 {
+  color: #f9be3c;
+}
 .section09 .section09-01 {
   width: 80%;
   margin: 5vh auto;
@@ -258,6 +273,10 @@ iframe {
 .section09 .section09-01 .section09-01-01 {
   text-align: center;
   margin-bottom: 3vh;
+}
+.section09 .section09-01 .section09-01-01 h4 {
+  color: #f9be3c;
+  font-size: 3em;
 }
 .section09 .section09-01 .section09-01-01 .card {
   box-shadow: 1px 3px 6px rgba(17, 25, 33, 0.6);
@@ -271,7 +290,7 @@ iframe {
   content: counter(headings);
 }
 .section09 .section09-01 .section09-01-01 .card.success {
-  border: 3px solid #111921;
+  border: 3px solid #f9be3c;
 }
 
 .section10 {
@@ -521,7 +540,7 @@ footer .container ul li {
 
   .section08 .container .section08-01 {
     width: 100%;
-    padding: 2vh 4vh;
+    padding: 2vh 0;
   }
 
   .section09 .container {
@@ -584,6 +603,10 @@ footer .container ul li {
     font-size: 0.8em;
   }
 
+  .section08 .container .section08-01 {
+    padding: 2vh 0;
+  }
+
   .section11 .section11-01 .price-list {
     width: 100%;
   }
@@ -598,7 +621,7 @@ footer .container ul li {
   }
 
   .section05 .container .section05-contents .text p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   .section05 .container .section05-contents .text p strong.emphasis {
     font-size: 1.25em;
@@ -613,6 +636,13 @@ footer .container ul li {
   }
   .section07 .section07-area1 .img-text p {
     font-size: 0.8em;
+  }
+
+  .section08 .container .section08-01 {
+    padding: 2vh 0;
+  }
+  .section08 .container .section08-01 ol li {
+    font-size: 1em;
   }
 
   .section11 .section11-01 .price-list {
@@ -635,8 +665,12 @@ footer .container ul li {
     padding: 0;
   }
   .section09 .section09-01 .section09-01-01 .card .card-body .card-title {
-    font-size: 0.6em;
+    font-size: 0.8em;
     margin-top: 10px;
+  }
+
+  .section10 .container h3 span {
+    font-size: 0.5em;
   }
 
   .section11 .section11-01 .register {
@@ -646,7 +680,7 @@ footer .container ul li {
     width: 100%;
   }
   .section11 .section11-01 .price-list .list-info .benefits {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
 
   .plus {
