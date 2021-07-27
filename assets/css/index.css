@@ -11,6 +11,11 @@
   background: #f93c1d !important;
 }
 
+.btn-warning {
+  background: #f9be3c !important;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.33);
+}
+
 mark {
   background: #02827B !important;
 }

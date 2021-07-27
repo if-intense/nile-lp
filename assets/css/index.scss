@@ -18,6 +18,10 @@ $nile-yellow: rgb(249,190,60);
     background: $nile-orange !important;
 }
 
+.btn-warning {
+    background: $nile-yellow !important;
+    box-shadow: 1px 3px 6px rgba(0,0,0,0.33);
+}
 
 
 mark {
