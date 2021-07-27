@@ -3,7 +3,6 @@
 }
 
 .btn-primary {
-  background: #0a548b !important;
   border-color: none;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .btn-warning {
-  background: #f9be3c !important;
+  background: #ffff33 !important;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.33);
 }
 
@@ -269,7 +268,7 @@ iframe {
   background-size: cover;
 }
 .section09 h2 {
-  color: #f9be3c;
+  color: #ffff33;
 }
 .section09 .section09-01 {
   width: 80%;
@@ -280,8 +279,11 @@ iframe {
   margin-bottom: 3vh;
 }
 .section09 .section09-01 .section09-01-01 h4 {
-  color: #f9be3c;
-  font-size: 3em;
+  color: #ffff33;
+}
+.section09 .section09-01 .section09-01-01 h4 i {
+  font-size: 1.5em;
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
 }
 .section09 .section09-01 .section09-01-01 .card {
   box-shadow: 1px 3px 6px rgba(17, 25, 33, 0.6);
@@ -295,7 +297,7 @@ iframe {
   content: counter(headings);
 }
 .section09 .section09-01 .section09-01-01 .card.success {
-  border: 3px solid #f9be3c;
+  border: 3px solid #ffff33;
 }
 
 .section10 {
@@ -668,6 +670,12 @@ footer .container ul li {
   .section06 .container .section06-text a.btn {
     width: 100%;
   }
+  .section06 .container .section06-text .card .card-text {
+    font-size: 1.1em;
+  }
+  .section06 .container .section06-text p {
+    font-size: 1.1em;
+  }
 
   .section08 .container .section08-01 .btn {
     width: 100%;
@@ -696,6 +704,9 @@ footer .container ul li {
   }
   .section11 .section11-01 .price-list .list-info .benefits {
     font-size: 0.9em;
+  }
+  .section11 .section11-01 dd {
+    font-size: 1.2em;
   }
 
   .plus {
