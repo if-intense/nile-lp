@@ -255,10 +255,6 @@ iframe {
   color: white;
 }
 
-:root {
-  counter-reset: headings;
-}
-
 .section09 {
   background: #ff85a1;
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../img/img001-handshake.jpg") no-repeat;
@@ -291,10 +287,6 @@ iframe {
 }
 .section09 .section09-01 .section09-01-01 .card .card-title {
   font-size: 1em;
-  counter-increment: headings;
-}
-.section09 .section09-01 .section09-01-01 .card .card-title::before {
-  content: counter(headings);
 }
 .section09 .section09-01 .section09-01-01 .card.success {
   border: 3px solid #ffff33;
@@ -507,7 +499,7 @@ iframe {
   text-shadow: 1px 1px 1px rgba(17, 25, 33, 0.5);
 }
 .section13 .container .steps .txt p {
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: center;
 }
 .section13 .container .steps .txt dl {
@@ -614,10 +606,10 @@ footer .container ul li {
     margin-bottom: 3vh;
   }
   .section07 .container .section07-area1 .inner-wrapper .section07-area2 {
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .section07 .container .section07-area1 .inner-wrapper .img-text p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .section08 .container .section08-01 {
@@ -688,7 +680,7 @@ footer .container ul li {
     padding: 0;
   }
   .section09 .section09-01 .section09-01-01 .card .card-body .card-title {
-    font-size: 0.8em;
+    font-size: 0.95em;
     margin-top: 10px;
   }
 
@@ -711,6 +703,10 @@ footer .container ul li {
 
   .plus {
     font-size: 0.8em;
+  }
+
+  .section13 .container .steps .txt p {
+    font-size: 1em;
   }
 }
 
